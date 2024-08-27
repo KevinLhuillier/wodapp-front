@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchWods, deleteWod } from "../redux/wodSlice";
+import DownloadButton from "./DownloadButton";
 
 const WodList = () => {
   // const [wods, setWods] = useState([]);
@@ -67,6 +68,7 @@ const WodList = () => {
           </li>
         ))}
       </ul>
+      <DownloadButton/>
     </div>
   );
 };
