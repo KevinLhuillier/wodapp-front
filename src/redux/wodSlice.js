@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchWods = createAsyncThunk("wods/fetchWods", async () => {
-  const response = await axios.get("http://localhost:8080/api/wods");
+  const response = await axios.get("http://57.129.42.227:8080/api/wods");
   return response.data;
 });
 
